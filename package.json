@@ -99,7 +99,8 @@
   "scripts": {
     "dev": "gulp",
     "test": "gscan .",
-    "zip": "gulp zip"
+    "zip": "gulp zip",
+    "symlink": "ln -sfn ~/Code/aguas-claras/aguas-claras-theme ~/Code/aguas-claras/aguasclaras.org/current/content/themes"
   },
   "devDependencies": {
     "@tryghost/shared-theme-assets": "2.4.5",
