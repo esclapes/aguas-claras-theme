@@ -110,6 +110,7 @@
     "gscan": "4.43.5",
     "gulp": "5.0.0",
     "gulp-concat": "2.6.1",
+    "gulp-if": "^3.0.0",
     "gulp-livereload": "4.0.2",
     "gulp-postcss": "10.0.0",
     "gulp-uglify": "3.0.2",
@@ -117,6 +118,7 @@
     "ordered-read-streams": "2.0.0",
     "postcss": "8.4.47",
     "postcss-easy-import": "4.0.0",
-    "pump": "3.0.2"
+    "pump": "3.0.2",
+    "vinyl-buffer": "^1.0.1"
   }
 }

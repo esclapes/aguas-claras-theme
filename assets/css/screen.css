@@ -1,15 +1,15 @@
 @import "@tryghost/shared-theme-assets/assets/css/v2/screen.css";
 
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Raleway";
   font-weight: 200 900;
   font-stretch: 80% 125%;
-  src: url("/assets/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
-    url("/assets/fonts/Mona-Sans.woff2") format("woff2-variations");
+  src: url("/assets/fonts/Raleway.woff2") format("woff2 supports variations"),
+    url("/assets/fonts/Raleway.woff2") format("woff2-variations");
 }
 
 :root {
-  --font-sans: "Mona Sans", sans-serif;
+  --font-sans: "Raleway", sans-serif;
 }
 
 body {
@@ -353,4 +353,8 @@ body {
 
 .gh-podcast-service-list + .gh-archive {
   margin-top: clamp(6.4rem, 4.09vw + 4.76rem, 10rem);
+}
+
+.kg-embed-card iframe {
+  width: 100%;
 }
