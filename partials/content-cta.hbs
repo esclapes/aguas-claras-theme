@@ -1,0 +1,42 @@
+{{{html}}}
+<aside class="gh-post-upgrade-cta">
+  <div
+    class="gh-post-upgrade-cta-content"
+    style="background-color: {{@site.accent_color}}"
+  >
+    {{#has visibility="paid"}}
+      <h2>
+        {{#is "page"}}Esta página{{else}}Este post{{/is}}
+        es para suscriptores de pago</h2>
+    {{/has}}
+    {{#has visibility="members"}}
+      <h2>
+        {{#is "page"}}Esta página{{else}}Este post{{/is}}
+        es para suscriptores</h2>
+    {{/has}}
+    {{#has visibility="tiers"}}
+      <h2>
+        {{#is "page"}}Esta página{{else}}Este post{{/is}}
+        es para suscriptores en el plan
+        {{tiers}}
+      </h2>
+    {{/has}}
+    {{#if @member}}
+      <a
+        class="gh-btn"
+        data-portal="account/plans"
+        href="#/portal/account/plans"
+        style="color:{{@site.accent_color}}"
+      >Escoge tu plan</a>
+    {{else}}
+      <a
+        class="gh-btn"
+        data-portal="signup"
+        href="#/portal/signup"
+        style="color:{{@site.accent_color}}"
+      >Suscríbete ahora</a>
+      <p><small>Ya tienes una cuenta?
+          <a data-portal="signin" href="#/portal/signin">Inicia sesión</a></small></p>
+    {{/if}}
+  </div>
+</aside>
